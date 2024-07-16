@@ -35,6 +35,7 @@ Or with the -h flag:
 
 ## Instructions
 General usage:
+
 ``./panterm.sh <script> [SITENAME] [ARGUMENTS]``
 
 ### Script options
@@ -44,6 +45,7 @@ update
 ```
 
 To see instructions for each script:
+
 ``./panterm.sh <script> -h``
 
 #### Review script
