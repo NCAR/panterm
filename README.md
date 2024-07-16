@@ -5,17 +5,22 @@ Command line scripts for managing Drupal websites on Pantheon via terminus comma
 
 ## Setup
 Download or copy script and cd into directory with script:
-`git clone https://github.com/NCAR/panterm`
-`cd panterm`
+
+``git clone https://github.com/NCAR/panterm``
+
+``cd panterm``
 
 Make script executable by running:
-`chmod 755 panterm.sh`
+
+``chmod 755 panterm.sh``
 
 Then run the script without arguments to see options:
-`./panterm.sh`
+
+``./panterm.sh``
 
 Or with the -h flag:
-`./panterm.sh -h`
+
+``./panterm.sh -h``
 
 
 
