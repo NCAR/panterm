@@ -3,8 +3,17 @@ Command line scripts for managing Drupal websites on Pantheon via terminus comma
 
 
 
+## Requirements
+- ddev
+- docker
+- mkcert
+- terminus
+- composer
+
+
+
 ## Setup
-Download or copy script and cd into directory with script:
+Clone this repo and cd into the directory:
 
 ``git clone https://github.com/NCAR/panterm``
 
@@ -30,20 +39,24 @@ General usage:
 
 ### Script options
 ```
-review -  pulls down a site into ddev and merges PR in for testing
-update -  runs pantheon updates
+review
+update
 ```
 
 To see instructions for each script:
 ``./panterm.sh <script> -h``
 
 #### Review script
+Pulls down a site into a local ddev container and merges PR in for testing. Will disable simplesaml as well as provide a link to login for a user.
+
 General usage:
 ``./panterm.sh review [SITENAME] [PR]``
 
 Where ``SITENAME`` is the site to test the pr on and ``PR`` is the pull request number in 0-9 format.
 
 #### Update script
+Runs pantheon updates for a selected site.
+
 General usage:
 ``./panterm.sh update [SITENAME] [ARGUMENTS]``
 
