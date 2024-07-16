@@ -47,9 +47,10 @@ To see instructions for each script:
 ``./panterm.sh <script> -h``
 
 #### Review script
-Pulls down a site into a local ddev container and merges PR in for testing. Will disable simplesaml as well as provide a link to login for a user.
+Pulls down a site into a local ddev container and merges PR in for testing. Will disable simplesaml as well as provide a link to login for the entered user.
 
 General usage:
+
 ``./panterm.sh review [SITENAME] [PR]``
 
 Where ``SITENAME`` is the site to test the pr on and ``PR`` is the pull request number in 0-9 format.
@@ -58,6 +59,7 @@ Where ``SITENAME`` is the site to test the pr on and ``PR`` is the pull request 
 Runs pantheon updates for a selected site.
 
 General usage:
+
 ``./panterm.sh update [SITENAME] [ARGUMENTS]``
 
 Where ``SITENAME`` is the site to update and ``ARGUMENTS`` are the extra arguments to pass.
