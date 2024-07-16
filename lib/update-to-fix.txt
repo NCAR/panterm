@@ -1,0 +1,61 @@
+  
+# if upstream updates fail in dev then need to stop script
+
+
+applying upstream updates for cesm-unity...
+ [notice] Applying 1 upstream update(s) and any composer update(s) to the dev environment of cesm-unity...
+ [error]  The operation failed to complete. 
+
+upstream updates applied to dev environment
+drupal8 or above site so update modules via composer
+
+dev environment updated, check site if needed - https://dev-cesm-unity.pantheonsite.io
+
+using the commit message: upstream updates
+applying to test environment [notice] There is nothing to deploy.
+ 0/2 [>---------------------------] Clearing caches for "test"^C
+applying to live environment^C^C
+
+
+
+
+applying upstream updates for ccis-unity...
+ [notice] Applying 1 upstream update(s) and any composer update(s) to the dev environment of ccis-unity...
+ [error]  Successfully queued endpoint_clear_framework_cache 
+
+upstream updates applied to dev environment
+drupal8 or above site so update modules via composer
+
+dev environment updated, check site if needed - https://dev-ccis-unity.pantheonsite.io
+
+using the commit message: upstream updates
+applying to test environment^C^C^C^C
+
+
+
+
+# ERROR FOR IF DB UPDATES FAIL
+checking for upstream updates...
+upstream updates found, gathering list...
+ [warning] There are no available updates for this site.
+ ----------- --------- -------- 
+  Timestamp   Message   Author  
+ ----------- --------- -------- 
+
+applying upstream updates for neon-unity...
+ [notice] Applying 0 upstream update(s) and any composer update(s) to the dev environment of neon-unity...
+ [error]  Successfully queued update_database 
+
+upstream updates applied to dev environment
+drupal8 or above site so update modules via composer
+
+dev environment updated, check site if needed - https://dev-neon-unity.pantheonsite.io
+
+using the commit message: updates
+ [error]  Successfully queued update_database 
+ [notice] Caches cleared on test.
+
+ [error]  Successfully queued update_database 
+ [notice] Caches cleared on live.
+
+neon-unity updated!!
