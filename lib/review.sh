@@ -262,7 +262,7 @@ if echo "$CMD_PR" | grep -q '^GraphQL'; then
             cd ..
             rm -rf unity-profile-pr/
             exit 0;
-        ;
+        ;;
     esac
 else
     # run the checkout command

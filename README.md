@@ -82,3 +82,7 @@ Where ``SITENAME`` is the site to update and ``ARGUMENTS`` are the extra argumen
 
 ## Notes
 If no ``SITENAME``, ``PR``, or ``ARGUMENTS`` passed then the script will prompt for the values.
+
+
+## Bugs
+Got hung up on cloning the files down
