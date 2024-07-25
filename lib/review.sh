@@ -77,6 +77,14 @@ check_req() {
         exit 0
     fi
 
+    # check if gh is installed
+    if command -v gh >/dev/null 2>&1; then
+        echo -e "${GREEN}gh installed${NC}"
+    else
+        echo -e "${RED}gh not installed, please install and try again${NC}"
+        exit 0
+    fi
+
     # check if mkcert is installed
     if command -v mkcert >/dev/null 2>&1; then
         echo -e "${GREEN}mkcert installed${NC}"
@@ -175,6 +183,9 @@ fi
 #
 # all good so print out the command
 echo -e "${ITALIC}$CMD_CLONE${NC}"
+
+exit 0
+
 
 # run the clone command
 eval $CMD_CLONE

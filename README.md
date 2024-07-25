@@ -6,11 +6,12 @@ Command line scripts for managing Drupal websites on Pantheon via terminus comma
 ## Requirements
 ### Software
 You will need to following installed on your machine:
-- ddev
-- docker
+- [composer](https://getcomposer.org/download/)
+- [ddev](https://ddev.com/get-started/)
+- [docker](https://docs.docker.com/engine/install/)
+- [gh](https://cli.github.com/)
 - mkcert
-- terminus
-- composer
+- [terminus](https://docs.pantheon.io/terminus/install)
 
 ### Tokens / Keys
 You will also need the following tokens and keys:
