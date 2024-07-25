@@ -167,7 +167,16 @@ if [[ ! "$PR_NUM" =~ ^[0-9]+([.][0-9]+)?$ ]]; then
     echo -e "${RED}pr ${BOLD}${UNDERLINE}$PR_NUM${NC} ${RED}is not a number${NC}"
     exit 0
 else
-    # add a unique dir to clone into
+    # extract the last field from the git clone command
+    REPO_NAME=$(echo "$CMD_CLONE" | awk '{print $NF}')
+
+    # add the sites dir to it
+    DIR_REPO_NAME="sites/$REPO_NAME"
+
+    # add the sites dir to the path
+    CMD_CLONE="${CMD_CLONE/$REPO_NAME/$DIR_REPO_NAME}"
+
+    # add the pr num to the dir to clone into
     CMD_CLONE="${CMD_CLONE}-pr-$PR_NUM"
 
     # set the pr dir
@@ -183,9 +192,6 @@ fi
 #
 # all good so print out the command
 echo -e "${ITALIC}$CMD_CLONE${NC}"
-
-exit 0
-
 
 # run the clone command
 eval $CMD_CLONE
