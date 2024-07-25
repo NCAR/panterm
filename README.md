@@ -86,7 +86,7 @@ If no ``SITENAME``, ``PR``, or ``ARGUMENTS`` passed then the script will prompt 
 ## Todo
 If using the --no-check flag then will need to stop if upstream updates are not successful in applying to dev. Similar for not passing no-check where script shouldn't allow to continue and only option should be to exit.
 
-For the review script, maybe see if can use an exsisting cloned down repo from previous review script run to save on space and ddev containers?
+For the review script, maybe see if can use an existing cloned down repo from previous review script run to save on space and ddev containers?
 
 
 
