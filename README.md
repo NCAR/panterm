@@ -83,6 +83,12 @@ Where ``SITENAME`` is the site to update and ``ARGUMENTS`` are the extra argumen
 ## Notes
 If no ``SITENAME``, ``PR``, or ``ARGUMENTS`` passed then the script will prompt for the values.
 
+## Todo
+If using the --no-check flag then will need to stop if upstream updates are not successful in applying to dev. Similar for not passing no-check where script shouldn't allow to continue and only option should be to exit.
+
+For the review script, maybe see if can use an exsisting cloned down repo from previous review script run to save on space and ddev containers?
+
+
 
 ## Bugs
-Got hung up on cloning the files down
+Gets hung up on cloning the files down with sites that have large files. For example 6gb hung up or maybe just need to let it sit for a while?
