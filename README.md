@@ -1,14 +1,21 @@
 # panterm
-Command line scripts for managing Drupal websites on Pantheon via terminus commands.
+Command line scripts for managing Drupal websites on Pantheon via terminus commands. Based off the [Developing with DDEV](https://wiki.ucar.edu/display/WED/Developing+with+DDEV) wiki guide.
 
 
 
 ## Requirements
+### Software
+You will need to following installed on your machine:
 - ddev
 - docker
 - mkcert
 - terminus
 - composer
+
+### Tokens / Keys
+You will also need the following tokens and keys:
+- [Pantheon machine token](https://docs.pantheon.io/machine-tokens)
+- [Pantheon SSH key](https://docs.pantheon.io/ssh-keys)
 
 
 
