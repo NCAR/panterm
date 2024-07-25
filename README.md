@@ -41,6 +41,8 @@ Or with the -h flag:
 
 
 ## Instructions
+Make sure docker is running **before** running the commands below.
+
 General usage:
 
 ``./panterm.sh <script> [SITENAME] [ARGUMENTS]``
