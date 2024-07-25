@@ -181,6 +181,7 @@ else
 
     # set the pr dir
     DIR_SITE="$SITENAME-pr-$PR_NUM"
+    DIR_SITE_DIR="sites/$SITENAME-pr-$PR_NUM"
 fi
 
 
@@ -197,7 +198,7 @@ echo -e "${ITALIC}$CMD_CLONE${NC}"
 eval $CMD_CLONE
 
 # cd into the new dir
-cd $DIR_SITE
+cd $DIR_SITE_DIR
 
 # set the ddev configs
 # TODO

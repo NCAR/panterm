@@ -1,2 +1,8 @@
 # dont need mac files
 .DS_Store
+
+# ignore everything in the sites dir
+sites/*
+
+# but not the readme
+!sites/README.md
